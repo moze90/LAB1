@@ -13,7 +13,7 @@ app.use(express.static(path));
 // Serving HTML-file
 app.get("/", (req, res) => {
     console.log(path)
-    res.sendFile('index.html');
+    res.sendFile(__dirname + '/index.html');
 })
 // Handling API-request
 app.get("/api", (req, res) => {
